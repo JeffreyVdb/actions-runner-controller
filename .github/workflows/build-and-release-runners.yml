@@ -3,9 +3,9 @@ name: Build and Release Runners
 on:
   pull_request:
     branches:
-      - '**'
+      - "**"
     paths:
-      - 'runner/**'
+      - "runner/**"
       - .github/workflows/build-and-release-runners.yml
   push:
     branches:
@@ -21,7 +21,7 @@ on:
 env:
   RUNNER_VERSION: 2.283.2
   DOCKER_VERSION: 20.10.8
-  DOCKERHUB_USERNAME: summerwind
+  DOCKERHUB_USERNAME: jeffreyvdb
 
 jobs:
   build:
